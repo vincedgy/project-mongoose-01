@@ -1,0 +1,35 @@
+http://127.0.0.1:3000/users
+
+###
+GET http://127.0.0.1:3000/users/6416f14dad6d7adf4f66f1f1
+
+###
+GET http://127.0.0.1:3000/users/1
+
+###
+POST http://127.0.0.1:3000/users
+Content-Type: application/json
+
+{
+  "firstName": "Eve",
+  "lastName": "Dagoury",
+  "email": "eve.dagoury@gmail.com",
+  "age": 7
+}
+
+
+###
+PATCH http://127.0.0.1:3000/users/6420a8df55ae30186151804b
+Content-Type: application/json
+
+{
+  "firstName": "Eve",
+  "lastName": "Dagoury",
+  "email": "eve.dagoury@gmail.com",
+  "age": 7
+}
+
+
+
+###
+DELETE http://127.0.0.1:3000/users/6420aa26a7d2577b8d13f93d
