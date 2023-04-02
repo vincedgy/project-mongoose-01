@@ -9,7 +9,7 @@ const Users = mongoose.model('users', new mongoose.Schema());
 db.on('error', (error) => console.error(error))
 db.once('open', () => console.log("Connected to database"))
 
-// API Initialisation
+// API Initialization
 const app = express()
 app.use(express.json())
 
