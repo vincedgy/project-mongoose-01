@@ -1,4 +1,4 @@
-# Using Mongoose with Mongo Atlas
+# Using MongoDB Client & Mongoose with Mongo Atlas
 
 ## What do we want ?
 
@@ -17,12 +17,11 @@ We need a platform : we'll use NodeJs and is ecosystem (you should know a peace 
 
 We need a couple of simple yet efficient lib to be installed as the following : 
 
+- mongodb
 - mongoose
 - express
 
 And for development haid : 
 
 - nodemon
-
-
-## How to 
+- typescript
