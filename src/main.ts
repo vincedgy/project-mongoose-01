@@ -47,8 +47,14 @@ async function main() {
     const cUser1 = await finUserByEmail(users, user1.email);
     console.log(cUser1);
 
-
-
+    // Updating The user we found
+    
+    user1.age = 13
+    const updatedUser = await users.updateOne({email: user1.email}, { "$set": user1 })
+    console.log(`Number of matches is ${updatedUser.matchedCount}`)
+    console.log(`Number of modifications is ${updatedUser.modifiedCount}`)
+    const uUser1 = await finUserByEmail(users, user1.email);
+    console.log(uUser1);
 
   } catch (e) {
     console.error(e);
